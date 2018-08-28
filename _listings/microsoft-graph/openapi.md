@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Microsoft Graph
 x-complete: 1
@@ -83,20 +82,6 @@ paths:
       tags:
       - Range
       - Fill
-    patch:
-      summary: Update Rangefill
-      description: Update rangefill Update the properties of rangefill object.
-      operationId: UpdateRangefill
-      x-api-path-slug: workbooknamesltnamegtrangeformatfill-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: Bearer
-      responses:
-        200:
-          description: OK
-      tags:
-      - Rangefill
   /workbook/worksheets(&lt;id|name&gt;)/range(&lt;address&gt;)/format/fill:
     get:
       summary: Get Range Fill
@@ -114,20 +99,6 @@ paths:
       tags:
       - Range
       - Fill
-    patch:
-      summary: Update Rangefill
-      description: Update rangefill Update the properties of rangefill object.
-      operationId: UpdateRangefill
-      x-api-path-slug: workbookworksheetsltidnamegtrangeltaddressgtformatfill-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: Bearer
-      responses:
-        200:
-          description: OK
-      tags:
-      - Rangefill
   /workbook/tables(&lt;id|name&gt;)/columns(&lt;id|name&gt;)/range/format/fill:
     get:
       summary: Get Range Fill
@@ -145,18 +116,3 @@ paths:
       tags:
       - Range
       - Fill
-    patch:
-      summary: Update Rangefill
-      description: Update rangefill Update the properties of rangefill object.
-      operationId: UpdateRangefill
-      x-api-path-slug: workbooktablesltidnamegtcolumnsltidnamegtrangeformatfill-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: Bearer
-      responses:
-        200:
-          description: OK
-      tags:
-      - Rangefill
----
